@@ -8,6 +8,11 @@ body{
     background: #454545;
     color: #f5fffa;
 }
+h1{
+    color:palegreen;
+    font-size: 30px;
+    text-align: center;
+}
 .container{
     width: 100%;
     height: 100vh;
@@ -31,7 +36,7 @@ textarea{
 iframe{
     width: 100%;
     height: 99%;
-    background: #778899;
+    background: white;
     border: 0;
     outline: 0;
 }

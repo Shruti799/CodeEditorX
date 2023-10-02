@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" /> 
     <title>CodeEditorX</title>
+    <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/22149ed6d3.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <h1 style="font-size: 15px; color: palegreen;">Edit on</h1>
+    <h1>CodeEditorX</h1>
     <div class="container">
         <div class="left">
             <label><i class="fa-brands fa-html5"></i> HTML</label>
@@ -26,18 +29,6 @@
             <iframe id="output"></iframe>
         </div>
     </div>
-    <script>
-        function run(){
-            let htmlCode = document.getElementById("html-code").value;
-            let cssCode = document.getElementById("css-code").value;
-            let jsCode = document.getElementById("js-code").value;
-            let output = document.getElementById("output");
-
-            output.contentDocument.body.innerHTML = htmlCode +"<style>"+cssCode+"</style>";
-            output.contentWindow.eval(jsCode);
-        }
-   </script>
-    
     
 </body>
 </html>
