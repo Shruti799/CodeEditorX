@@ -8,6 +8,11 @@ body{
     background: #454545;
     color: #f5fffa;
 }
+h1{
+    color:palegreen;
+    font-size: 30px;
+    text-align: center;
+}
 .container{
     width: 100%;
     height: 100vh;
