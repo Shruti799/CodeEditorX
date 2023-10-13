@@ -9,27 +9,39 @@
     <title>CodeEditorX</title>
     <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/22149ed6d3.js" crossorigin="anonymous"></script>
-    
+    <!-- Add these in your HTML's <head> section -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.2/codemirror.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.2/codemirror.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.2/mode/htmlmixed/htmlmixed.js"></script>
+
 </head>
 <body>
-    <h1 style="font-size: 15px; color: palegreen;">Edit on</h1>
+   
     <h1>CodeEditorX</h1>
+    <button id="login-button"><a href="login.html" target="_blank">Login</a></button>
+    <button id="signup-button"><a href="signup.html" target="_blank">Sign Up</a></button>
+    <div id="navbar-container">
+        <ul id="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    
     <div class="container">
         <div class="left">
             <label><i class="fa-brands fa-html5"></i> HTML</label>
-            <textarea id="html-code" onkeyup="run()"></textarea>
-            
+            <textarea id="html-code" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)" onkeyup="run()" placeholder="/* Write your HTML code here */"></textarea>
             <label><i class="fa-brands fa-css3-alt"></i> CSS</label>
-            <textarea id="css-code" onkeyup="run()"></textarea>
-
+            <textarea id="css-code" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)" onkeyup="run()" placeholder="/* Write your CSS code here */"></textarea>
             <label><i class="fa-brands fa-square-js"></i> JavaScript</label>
-            <textarea id="js-code" onkeyup="run()"></textarea>
+            <textarea id="js-code" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)" onkeyup="run()" placeholder="/* Write your JavaScript code here */"></textarea>
         </div>
         <div class="right">
             <label><i class="fa-solid fa-play"></i> Output</label>
             <iframe id="output"></iframe>
         </div>
     </div>
-    
+
 </body>
 </html>
