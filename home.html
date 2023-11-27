@@ -2,10 +2,12 @@
 <html>
 <head>
     <title>Text Editor Home</title>
+    <script src="https://kit.fontawesome.com/22149ed6d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #222;
+            background-color:#28282B;
             text-align: center;
             margin: 0;
             padding: 0;
@@ -14,19 +16,40 @@
 
         .header {
             background-color: #111;
-            padding: 15px 0;
+            padding: 3px 0;
+        }
+
+        .decorative-element {
+            position: absolute;
+            left: -100px; 
+            top: 100px;
+            font-size: 36px;
+            color: #FF8C00;
+            animation: moveRight 2s linear infinite; 
+        }
+
+        @keyframes moveRight {
+            0% {
+                transform: translateX(-100px);
+            }
+            100% {
+                transform: translateX(100%);
+            }
         }
 
         .container {
             max-width: 800px;
+            background-color: #301934;
             margin: 0 auto;
-            padding: 40px 20px 110px; 
-            background-color: #333;
+            padding: 90px 215px 300px; 
+            background-size: cover;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+            font-family:Arial, Helvetica, sans-serif;
+            font-style:italic;
         }
 
-        h1 {
+         h1 {
             color: #5856d6;
             font-size: 36px;
         }
@@ -37,49 +60,340 @@
             margin: 20px 0;
         }
 
-        a {
+         a {
             display: inline-block;
             text-decoration: none;
             background-color: #5856d6;
             color: #fff;
-            font-size: 24px;
-            padding: 10px 20px;
+            font-size: 22px;
+            padding: 10px 12px;
             border-radius: 5px;
             transition: background-color 0.3s, color 0.3s;
         }
 
-        a:hover {
+        #container a:hover {
             background-color: #0055a4;
         }
 
         .footer {
             background-color: #111;
-            padding: 35px 0;
+            top:20%;
+            padding: 10px 0;
+            
+        }
+        .home-icon {
+            position: absolute;
+            top: 30px;
+            left: 60px;
+            font-size: 36px;
+            color: #A95C68;
+        }
+        .github-link {
+            font-size: 14px;
+            background-color: #111;
+            padding-top: 1px;
+        }
+        .resources-label {
+            color: whitesmoke;
+            font-size: 18px;
+            background-color: #301934;
+            margin-bottom: 10px;
+        }
+        .menu-bar {
+            position: absolute;
+            top: 16%;
+            left: 0;
+            width: 170px;
+            height: 77%;
+            background-color: #483248;
+            color: #fff;
+            padding: 20px 10px;
         }
 
-        .feature {
-            background-color: #444;
-            padding: 8px 0;
+        .menu-bar ul {
+            list-style: none;
+            padding: 29px;
+            background-color: #301934;
+        }
+        
+        .menu-bar li {
+            margin: 10px 0;
+        }
+        
+        .menu-bar a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            display: block;
+            background-color: #A95C68;
+            
+        }
+        .menu-bar a:hover {
+          background-color:#AA336A;
         }
 
-        .feature p {
-            font-size: 20px;
+       .flash-card {
+           position: absolute;
+           top: 40%;
+           right: 15px;
+           transform: translateY(-50%);
+           background-color:  #301934;
+           padding: 10px;
+           max-height: 190px;
+           border-radius: 5px;
+           color: white;
+           font-size: 16px;
+           font-style: italic;
+           font-family:Georgia, 'Times New Roman', Times, serif;
+           font-weight: bold;
+           text-align: center;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+       }
+
+       #autoWriteCard {
+           position: absolute;
+           top: 87%;
+           left: 28%;
+           transform: translate(-50%, -50%);
+           background-color: #16161D;
+           padding: 10px ;
+           height: 15%;
+           border-radius: 5px;
+           color: orange;
+           font-size: 13px;
+           text-align: center;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+           overflow: hidden;
         }
+        #autoWriteCard #autoWriteContent {
+           color: orange;
+           font-size: 16px;
+        }
+
+        #autoWriteContent::after {
+            content: '|'; 
+            animation: blinkCursor 0.8s infinite;
+        }
+        
+        @keyframes blinkCursor {
+            50% {
+                opacity: 0;
+            }
+        }
+        .html-label {
+          display: flex;
+          margin-bottom: 5px;
+          align-items: center;
+          background-color: black;
+          font-size: 15px;
+          color: white;
+        }
+        .dropdown-symbol {
+           margin-right: 5px;
+        }
+
+        #autoWriiteCard {
+           position: absolute;
+           top: 75%;
+           left: 49%;
+           transform: translate(-50%, -50%);
+           background-color: #16161D;
+           padding: 10px ;
+           height: 15%;
+           border-radius: 5px;
+           font-size: 13px;
+           text-align: center;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+           overflow: hidden;
+        }
+        #autoWriiteCard #autoWriiteContent {
+           color: green;
+           font-size: 16px;
+        }
+
+        #autoWriiteContent::after {
+            content: '|';
+            animation: bliinkCursor 0.8s infinite;
+        }
+        @keyframes bliinkCursor {
+            50% {
+                opacity: 0;
+            }
+        }
+        .css-label {
+          display: flex;
+          margin-bottom: 5px;
+          align-items: center;
+          background-color: black;
+          font-size: 15px;
+          color: white;
+        }
+        .dropdownn-symbol {
+           margin-right: 5px;
+        }
+
+        #autoWriiiteCard {
+           position: absolute;
+           top: 87%;
+           left: 71%;
+           transform: translate(-50%, -50%);
+           background-color: #16161D;
+           padding: 10px ;
+           height: 15%;
+           border-radius: 5px;
+           font-size: 13px;
+           text-align: center;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+           overflow: hidden;
+        }
+        #autoWriiiteCard #autoWriiiteContent {
+           color: #5856d6;
+           font-size: 16px;
+        }
+
+        #autoWriiiteContent::after {
+            content: '|';
+            animation: bliiinkCursor 0.8s infinite;
+        }
+        @keyframes bliiinkCursor {
+            50% {
+                opacity: 0;
+            }
+        }
+        .js-label {
+          display: flex;
+          margin-bottom: 5px;
+          align-items: center;
+          background-color: black;
+          font-size: 15px;
+          color: white;
+        }
+        .dropdownnn-symbol {
+           margin-right: 5px;
+        }
+        /*#signup-button {
+           position: absolute;
+           top: 10px;
+           right: 20px;
+           background-color: #00cc00;
+           color: white;
+           border: none;
+           padding: 10px 32px;
+           cursor: pointer;
+           border-radius: 10px;
+           transition: background-color 0.3s;
+        }
+        #signup-button:hover {
+            background-color: greenyellow; 
+        }*/
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Welcome to CodeEditorX</h1>
+        <h1>Welcome to <span style="color: #FF8C00">CodeEditorX</span></h1>
+        <i class="decorative-element fas fa-code"></i>
     </div>
+    <!--<button id="signup-button"><a href="signup.html" target="_blank">Sign Up</a></button>!-->
     <div class="container">
-        <p>Click below to start editing:</p>
-        <a href="index.html">Open Text Editor</a>
-    </div>
-    <div class="feature">
-        <p>Explore our latest features and enhancements.</p>
+        <p>Unleash Your Creativity - Start Coding Now</p>
+        <a href="index.html">Open Code Editor</a>
     </div>
     <div class="footer">
+        <i class="fas fa-home home-icon"></i>
         <p>&copy; 2023 CodeEditorX Home</p>
+        <a class="github-link" href="https://github.com/yourusername/yourrepository" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+        </a>
     </div>
+    <div class="menu-bar">
+        <div class="resources-label">Resources</div>
+        <ul>
+            <li><a href="https://www.w3schools.com/html/">HTML</a></li>
+            <li><a href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+            <li><a href="https://www.w3schools.com/js/default.asp">JavaScript</a></li>
+        </ul>
+    </div>
+    <!--<div class="stylish-text">
+        <h3>The best place to</h3>
+        <h3>build, test, and</h3>
+        <h3>discover front-end</h3>
+        <h3>code.</h3>
+    </div>!-->
+    <div class="flash-card">
+        <p>CodeEditorX is a text editor</p>
+        <p>for front-end learners and</p>
+        <p>developers which displays</p>
+        <p>the result in real time.</p>
+    </div>
+
+     <div class="flashi-card" id="autoWriteCard">
+        <label class="html-label">
+            <i class="fa fa-gear fa-spin" style="font-size:14px; margin-right:9px;"></i>HTML
+            <!--<span class="dropdown-symbol">&#9660;</span> HTML!-->
+        </label>
+         <p id="autoWriteContent"></p>
+     </div>
+     <div class="flashii-card" id="autoWriiteCard">
+        <label class="css-label">
+            <i class="fa fa-gear fa-spin" style="font-size:14px; margin-right:9px;"></i>CSS
+            <!--<span class="dropdownn-symbol">&#9660;</span> CSS!-->
+        </label>
+         <p id="autoWriiteContent"></p>
+     </div>
+     <div class="flashiii-card" id="autoWriiiteCard">
+        <label class="js-label">
+            <i class="fa fa-gear fa-spin" style="font-size:14px; margin-right:9px;"></i>JavaScript
+            <!--<span class="dropdownnn-symbol">&#9881;</span> JavaScript!-->
+        </label>
+         <p id="autoWriiiteContent"></p>
+     </div>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function (){
+    const autoWriteCard = document.getElementById('autoWriteCard');
+    const autoWriteContent = document.getElementById('autoWriteContent');
+    const textToWrite = '<div class="codeditor"></div>';
+    autoWriteContent.textContent = '';
+    function autoWriteText(text, index = 0) {
+        if (index < text.length) {
+            autoWriteContent.textContent += text.charAt(index);
+            index++;
+            setTimeout(() => autoWriteText(text, index), 100);
+        }
+    }
+    autoWriteText(textToWrite);
+   });
+
+   document.addEventListener('DOMContentLoaded', function (){
+    const autoWriiteCard = document.getElementById('autoWriiteCard');
+    const autoWriiteContent = document.getElementById('autoWriiteContent');
+    const textToWrite = 'font-size: 13px; color: orange;';
+    autoWriiteContent.textContent = '';
+    function autoWriiteText(text, index = 0) {
+        if (index < text.length) {
+            autoWriiteContent.textContent += text.charAt(index);
+            index++;
+            setTimeout(() => autoWriiteText(text, index), 100);
+        }
+    }
+    autoWriiteText(textToWrite);
+   });
+
+   document.addEventListener('DOMContentLoaded', function (){
+    const autoWriiiteCard = document.getElementById('autoWriiiteCard');
+    const autoWriiiteContent = document.getElementById('autoWriiiteContent');
+    const textToWrite = 'var colors; function animate() {};';
+    autoWriiiteContent.textContent = '';
+    function autoWriiiteText(text, index = 0) {
+        if (index < text.length) {
+            autoWriiiteContent.textContent += text.charAt(index);
+            index++;
+            setTimeout(() => autoWriiiteText(text, index), 100);
+        }
+    }
+    autoWriiiteText(textToWrite);
+   });
+
+
+</script>
 </html>

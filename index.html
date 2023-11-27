@@ -9,39 +9,46 @@
     <title>CodeEditorX</title>
     <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/22149ed6d3.js" crossorigin="anonymous"></script>
-    <!-- Add these in your HTML's <head> section -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.2/codemirror.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.2/codemirror.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.2/mode/htmlmixed/htmlmixed.js"></script>
-
+    
 </head>
 <body>
    
     <h1>CodeEditorX</h1>
-    <button id="login-button"><a href="login.html" target="_blank">Login</a></button>
-    <button id="signup-button"><a href="signup.html" target="_blank">Sign Up</a></button>
+    <button id="login-button"><a href="login.html" target="_blank" style="font-size: 16px;color: black;font-style:bold;">Login</a></button>
+    <!--<button id="signup-button"><a href="signup.html" target="_blank">Sign Up</a></button>!-->
     <div id="navbar-container">
         <ul id="navbar">
             <li><a href="home.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn" onclick="toggleDropdown()">About</a>
+                <div class="dropdown-content" id="resourceDropdown">
+                    <a href="https://www.w3schools.com/html/">HTML</a>
+                    <a href="https://www.w3schools.com/css/default.asp">CSS</a>
+                    <a href="https://www.w3schools.com/js/default.asp">JavaScript</a>
+                </div>
+            </li>
+
         </ul>
     </div>
     
     <div class="container">
         <div class="left">
             <label><i class="fa-brands fa-html5"></i> HTML</label>
-            <textarea id="html-code" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)" onkeyup="run()" placeholder="/* Write your HTML code here */"></textarea>
+            <textarea id="html-code"  onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)" onkeyup="run()" placeholder="/* Write your HTML code here */"></textarea>
             <label><i class="fa-brands fa-css3-alt"></i> CSS</label>
             <textarea id="css-code" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)" onkeyup="run()" placeholder="/* Write your CSS code here */"></textarea>
             <label><i class="fa-brands fa-square-js"></i> JavaScript</label>
-            <textarea id="js-code" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)" onkeyup="run()" placeholder="/* Write your JavaScript code here */"></textarea>
+            <textarea  id="js-code" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)" onkeyup="run()" placeholder="/* Write your JavaScript code here */"></textarea>
         </div>
+        <div class="h-autocomplete" id="html-autocomplete"></div>
+        <div class="c-autocomplete" id="css-autocomplete"></div>
+        <div class="j-autocomplete" id="js-autocomplete"></div>
         <div class="right">
             <label><i class="fa-solid fa-play"></i> Output</label>
             <iframe id="output"></iframe>
         </div>
     </div>
 
+    
 </body>
 </html>
