@@ -73,6 +73,7 @@ h1{
     list-style-type: none;
     padding: 0;
 }
+/*/////////////////////////////////////////////////////////////////
 .dropbtn {
     cursor: pointer;
 }
@@ -97,8 +98,7 @@ h1{
 
 .dropdown-content a:hover {
     background-color:  #5856c5;
-}
-
+}/////////////////////////////////////////////////////////////////////*/
 #signup-form {
     display: none; 
     width: 300px;
