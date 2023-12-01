@@ -42,3 +42,6 @@ document.addEventListener('DOMContentLoaded', function (){
     }
     autoWriiiteText(textToWrite);
    });
+ function redirectToSignUp() {
+    window.location.href = 'signup.html';
+   }
