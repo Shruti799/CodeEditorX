@@ -19,14 +19,14 @@
     <div id="navbar-container">
         <ul id="navbar">
             <li><a href="home.html">Home</a></li>
-            <li class="dropdown">
+            <!--<li class="dropdown">
                 <a href="#" class="dropbtn" onclick="toggleDropdown()">About</a>
                 <div class="dropdown-content" id="resourceDropdown">
                     <a href="https://www.w3schools.com/html/">HTML</a>
                     <a href="https://www.w3schools.com/css/default.asp">CSS</a>
                     <a href="https://www.w3schools.com/js/default.asp">JavaScript</a>
                 </div>
-            </li>
+            </li>!-->
 
         </ul>
     </div>
@@ -37,11 +37,11 @@
                 <i class="fa-brands fa-html5"></i> HTML 
                 <i style="font-size:16px;margin-left:478px;" class="fa">&#xf013;</i>
             </label>
-            <textarea id="html-code"  onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)" onkeyup="run()" placeholder="/* Write your HTML code here */"></textarea>
+            <textarea style="color:orange;" id="html-code"  onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)" onkeyup="run()" placeholder="/* Write your HTML code here */"></textarea>
             <label><i class="fa-brands fa-css3-alt"></i> CSS <i style="font-size:16px;margin-left:489px;" class="fa">&#xf013;</i></label>
-            <textarea id="css-code" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)" onkeyup="run()" placeholder="/* Write your CSS code here */"></textarea>
+            <textarea style="color: rgb(18, 188, 18);" id="css-code" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)" onkeyup="run()" placeholder="/* Write your CSS code here */"></textarea>
             <label><i class="fa-brands fa-square-js"></i> JavaScript <i style="font-size:16px;margin-left:446px;" class="fa">&#xf013;</i></label>
-            <textarea  id="js-code" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)" onkeyup="run()" placeholder="/* Write your JavaScript code here */"></textarea>
+            <textarea style="color:#ba3e51;" id="js-code" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)" onkeyup="run()" placeholder="/* Write your JavaScript code here */"></textarea>
         </div>
         <div class="h-autocomplete" id="html-autocomplete"></div>
         <div class="c-autocomplete" id="css-autocomplete"></div>

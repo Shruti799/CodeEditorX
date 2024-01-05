@@ -1,3 +1,7 @@
+<?php
+include("store.php");
+error_reporting(0);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -78,17 +82,30 @@
         <img src="icon1.png" style="width:70px; margin-top: -50px;">
         <h1>Sign Up</h1>
         <form action="store.php" method="post">
-            <!--<label for="username">Username:</label>!-->
             <input type="text" id="username" name="username" placeholder="Username" required>
-
             <input type="email" id="email" name="email" placeholder="Your Email" required>
             <input type="password" id="password" name="password" placeholder="Password" required>
             <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
             <p><span><input type="checkbox" name=""></span> I agree to the Terms and Conditions</p>
-
-
-            <input type="submit" value="Sign Up">
+            <input type="submit" name="submit" value="Sign Up">
         </form>
     </div>
 </body>
 </html>
+
+<?php
+$nm=$_GET['username'];
+$em=$_GET['email'];
+$pw=$_GET['password'];
+$cpw=$_GET['confirm_password'];
+
+$query="INSERT INTO USER VALUES('$nm','$em','$pw','$cpw')";
+$data=mysqli_query($sto,$query);
+
+if($data){
+    echo "Data Submitted";
+}
+else{
+    echo "Failed to Submit";
+}
+?>

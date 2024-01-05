@@ -9,22 +9,22 @@
         /* CSS for the login page */
         body {
             font-family: Arial, sans-serif;
-            background-color: #5b6f7e;
+            background-image: url(nyt1.jpg);
+            background-size: cover;
             text-align: center;
         }
 
         .login-container {
-            max-width: 400px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: rgb(126, 209, 220);
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 330px;
+            margin: 3% auto;
+            padding: 18px;
+            background-color: white;
+            border: 6px;
         }
 
         h1 {
-            color: #333;
-            font-size: 23px;
+            color: #1c8adb;
+            font-size: 27px;
         }
 
         form {
@@ -38,23 +38,25 @@
         }
 
         input {
-            width: 100%;
-            padding: 10px 4px;
-            margin-top: 5px;
-            margin-bottom: 10px;
-            border: 1px solid black;
-            border-radius: 5px;
+            width: 93%;
+            padding: 9px 9px;
+            margin-top: 4px;
+            margin-bottom: 5px;
+            border: 1px solid #999;
+            border-radius: 12px;
+            outline: none;
         }
 
         button {
             background-color: #007BFF;
             color: #fff;
             border: none;
-            padding: 7px 14px;
+            padding: 8px 50px;
             border-radius: 5px;
             font-size: 15px;
             margin-top: 20px;
             cursor: pointer;
+            margin-left: 96px;
         }
 
         button:hover {
@@ -75,12 +77,13 @@
         <h2>&copy; CodeEditorX</h2>
     </div>
     <div class="login-container">
+        <img src="icon1.png" style="width:70px; margin-top: -50px;">
         <h1>Login</h1>
         <form>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <!--<label for="username">Username:</label>!-->
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <!--<label for="password">Password:</label>!-->
+            <input type="password" id="password" name="password" placeholder="Password" required>
             <button type="submit">Login</button>
         </form>
     </div>
