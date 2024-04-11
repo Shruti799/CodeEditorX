@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" /> 
+    <link href="prism.css" rel="stylesheet" />
     <title>CodeEditorX</title>
     <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/22149ed6d3.js" crossorigin="anonymous"></script>
@@ -19,15 +20,7 @@
     <div id="navbar-container">
         <ul id="navbar">
             <li><a href="home.html">Home</a></li>
-            <!--<li class="dropdown">
-                <a href="#" class="dropbtn" onclick="toggleDropdown()">About</a>
-                <div class="dropdown-content" id="resourceDropdown">
-                    <a href="https://www.w3schools.com/html/">HTML</a>
-                    <a href="https://www.w3schools.com/css/default.asp">CSS</a>
-                    <a href="https://www.w3schools.com/js/default.asp">JavaScript</a>
-                </div>
-            </li>!-->
-
+            <li id="layout-button"><a href="index2.html">Change Layout</a></li> 
         </ul>
     </div>
     
@@ -43,6 +36,7 @@
             <label><i class="fa-brands fa-square-js"></i> JavaScript <i style="font-size:16px;margin-left:446px;" class="fa">&#xf013;</i></label>
             <textarea style="color:#ba3e51;" id="js-code" onfocus="clearPlaceholder(this)" onblur="restorePlaceholder(this)" onkeyup="run()" placeholder="/* Write your JavaScript code here */"></textarea>
         </div>
+        
         <div class="h-autocomplete" id="html-autocomplete"></div>
         <div class="c-autocomplete" id="css-autocomplete"></div>
         <div class="j-autocomplete" id="js-autocomplete"></div>
@@ -51,7 +45,7 @@
             <iframe id="output"></iframe>
         </div>
     </div>
-
+    <script src="prism.js"></script>
     
 </body>
 </html>

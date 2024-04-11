@@ -7,9 +7,11 @@ body {
     color: #fff;
 }
 
+/*#16161D  */
+/* #ad68bb */
 .header {
-    background-color: #16161D;
-    padding: 3px 0;
+    background-color: #9e5fab;
+    padding: 4px 0;
 }
 
 .decorative-element {
@@ -30,11 +32,12 @@ body {
     }
 }
 
+/* #301934 */
 .container {
     max-width: 800px;
-    background-color: #301934;
+    background-color: #673670;
     margin: 0 auto;
-    padding: 90px 215px 300px; 
+    padding: 90px 236px 300px; 
     background-size: cover;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
@@ -42,9 +45,12 @@ body {
     font-style:italic;
 }
 
- h1 {
-    color: #5856d6;
-    font-size: 36px;
+.header p {
+    font-size: 35px;
+    color: white;
+    font-style: normal;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: -1000px;
 }
 
 p {
@@ -65,7 +71,7 @@ p {
 }
 
  a:hover {
-    background-color: #0055a4;
+    background-color: #3f96e7;
 }
 
 .footer {
@@ -89,7 +95,7 @@ p {
 .resources-label {
     color: whitesmoke;
     font-size: 18px;
-    background-color: #301934;
+    background-color: #673670;
     margin-bottom: 10px;
 }
 .menu-bar {
@@ -97,8 +103,8 @@ p {
     top: 16%;
     left: 0;
     width: 170px;
-    height: 77%;
-    background-color: #483248;
+    height: 83%;
+    background-color: #814f81;
     color: #fff;
     padding: 20px 10px;
 }
@@ -106,7 +112,7 @@ p {
 .menu-bar ul {
     list-style: none;
     padding: 29px;
-    background-color: #301934;
+    background-color: #673670;
 }
 
 .menu-bar li {
@@ -118,11 +124,11 @@ p {
     color: #fff;
     font-size: 16px;
     display: block;
-    background-color: #A95C68;
+    background-color: #6765d7;
     
 }
 .menu-bar a:hover {
-  background-color:#d67483;
+  background-color:#9290f3;
 }
 
 .flash-card {
@@ -130,7 +136,7 @@ p {
    top: 40%;
    right: 15px;
    transform: translateY(-50%);
-   background-color:  #301934;
+   background-color:  #422347;
    padding: 10px;
    max-height: 190px;
    border-radius: 5px;
@@ -261,8 +267,31 @@ p {
   font-size: 15px;
   color: white;
 }
+
 .dropdownnn-symbol {
    margin-right: 5px;
+   position: absolute;
+    top: 28px;
+    right: 0px;
+    background-color: #00cc00;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 11px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.header home-tab {
+    margin-left: 780px;
+    bottom: 1px; /* Add a slight margin to separate the icon and text */
+}
+  
+#home-tab i {
+  margin-top: 1px; /* Remove any unnecessary margin-top */
+  margin-bottom: 1px;
+  font-size: 27px;
 }
 
 #signup-button {
