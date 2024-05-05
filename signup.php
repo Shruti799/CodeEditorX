@@ -9,7 +9,7 @@ error_reporting(0);
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url(nyt1.jpg);
+            background-color: #8f8fcc;
             background-size: cover;
             text-align: center;
         }
@@ -20,6 +20,7 @@ error_reporting(0);
             padding: 18px;
             background-color: white;
             border: 6px ;
+            margin-top: 7px;
         }
 
         h1 {

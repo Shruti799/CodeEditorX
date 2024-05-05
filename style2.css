@@ -208,5 +208,73 @@ label{
     background-color: #30a0dc; 
 }
 
+.h-autocomplete {
+    position: absolute;
+    top:25%;
+    left:2%;
+    border: 1px solid #ccc;
+    max-height: 100px;
+    overflow-y: auto;
+    z-index: 1;
+    background-color: #191970;
+}
+
+.h-autocomplete div {
+    padding: 5px 40px 3px;
+    text-align: left;
+    cursor: pointer;
+    color: white;
+    
+}
+
+.h-autocomplete div:hover {
+    background-color: #6082B6;
+}
+
+.c-autocomplete {
+    position: absolute;
+    top:25%;
+    left:38%;
+    border: 1px solid #ccc;
+    max-height: 120px;
+    overflow-y: auto;
+    z-index: 1;
+    background-color: #191970;
+}
+
+.c-autocomplete div {
+    padding: 5px 40px 3px;
+    text-align: left;
+    cursor: pointer;
+    color: white;
+    
+}
+
+.c-autocomplete div:hover {
+    background-color: #6082B6;
+}
+
+.j-autocomplete {
+    position: absolute;
+    top:25%;
+    left:70%;
+    border: 1px solid #ccc;
+    max-height: 120px;
+    overflow-y: auto;
+    z-index: 1;
+    background-color: #191970;
+}
+
+.j-autocomplete div {
+    padding: 5px 40px 3px;
+    text-align: left;
+    cursor: pointer;
+    color: white;
+}
+
+.j-autocomplete div:hover {
+    background-color: #6082B6;
+}
+
 
 
