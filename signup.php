@@ -2,31 +2,6 @@
 include("store.php");
 error_reporting(0);
 
-// if (isset($_POST['submit'])) {
-//     $nm = $_POST['username'];
-//     $em = $_POST['email'];
-//     $pw = $_POST['password'];
-//     $cpw = $_POST['confirm_password'];
-
-//     // Check if passwords match
-//     if ($pw === $cpw) {
-//         // Use prepared statements to avoid SQL injection
-//         $stmt = $sto->prepare("INSERT INTO USER (username, email, password) VALUES (?, ?, ?)");
-//         $stmt->bind_param("sss", $nm, $em, $pw);
-
-//         if ($stmt->execute()) {
-//             echo "Data Submitted";
-//         } else {
-//             echo "Failed to Submit: " . $stmt->error;
-//         }
-
-//         $stmt->close();
-//     } else {
-//         echo "Passwords do not match.";
-//     }
-// }
-
-// $sto->close();
 ?>
 
 <!DOCTYPE html>

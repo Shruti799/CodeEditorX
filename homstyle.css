@@ -1,4 +1,4 @@
-body {
+* body {
     font-family: Arial, sans-serif;
     background-color:#28282B;
     text-align: center;
@@ -7,8 +7,6 @@ body {
     color: #fff;
 }
 
-/*#16161D  */
-/* #ad68bb */
 .header {
     background-color: #9e5fab;
     padding: 4px 0;
@@ -32,7 +30,7 @@ body {
     }
 }
 
-/* #301934 */
+
 .container {
     max-width: 800px;
     background-color: #673670;
@@ -285,11 +283,11 @@ p {
 
 .header home-tab {
     margin-left: 780px;
-    bottom: 1px; /* Add a slight margin to separate the icon and text */
+    bottom: 1px; 
 }
   
 #home-tab i {
-  margin-top: 1px; /* Remove any unnecessary margin-top */
+  margin-top: 1px; 
   margin-bottom: 1px;
   font-size: 27px;
 }
@@ -310,4 +308,5 @@ p {
 
 #signup-button:hover {
     background-color: rgb(134, 199, 35);
-}
+} 
+ 
