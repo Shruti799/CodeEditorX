@@ -109,17 +109,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const htmlTags = [
   '<html></html>', '<h1></h1>', '<h2></h2>', '<h3></h3>', '<h4></h4>', '<h5></h5>', '<h6></h6>', '<p></p>', '<h1></h1>', '<h1></h1>', '<textarea></textarea>','<label></label>','<i></i>','<legend></legend>','<frame></frame>','<head></head>', '<body></body>', '<div></div>', 'span', '<p></p>', '<a></a>', '<img>', '<ul></ul>', '<li></li>', '<ol></ol>', '<table></table>', '<tr></tr>', '<td></td>', '<th></th>','class=" "','href=" "','src=" "','<input>','type=" "','text','select','radio','<button></button>','placeholder=" "',
-  // Add more HTML tags as needed
+
 ];
 
 const cssProperties = [
   'color:', 'font-size:', 'margin:', 'padding:', 'background-color:', 'border:', 'display:', 'width:', 'height:','font-style:','transition:','top:','bottom:','left:','right:',
-  // Add more CSS properties as needed
+
 ];
 
 const jsKeywords = [
   'var', 'let', 'const', 'function', 'document.getElementById()','document.createElement()','if', 'else', 'for', 'while', 'switch', 'case', 'break', 'return',
-  // Add more JavaScript keywords as needed
+  
 ];
 
 function showSuggestions(autocompleteContainer, suggestions) {
@@ -134,7 +134,7 @@ function showSuggestions(autocompleteContainer, suggestions) {
       autocompleteContainer.appendChild(suggestionElement);
   });
 
-  // Show the suggestions container
+  // Showing the suggestions container
   autocompleteContainer.style.display = suggestions.length > 0 ? 'block' : 'none';
 }
 
@@ -148,12 +148,12 @@ function insertSuggestion(textarea, suggestion) {
   const newText = prefix + suggestion + suffix;
 
   textarea.value = newText;
-  textarea.focus(); // Set focus back to the textarea
+  textarea.focus(); // Setting focus back to the textarea
 
   hideSuggestions(textarea.nextElementSibling);
 }
 
 function hideSuggestions(autocompleteContainer) {
-  // Hide the suggestions container
+  // Hiding the suggestions container
   autocompleteContainer.style.display = 'none';
 }
