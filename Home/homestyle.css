@@ -8,9 +8,11 @@
 }
 
 .header {
-    background-color: #9e5fab;
+    background-color: rgb(15, 14, 14);
     padding: 4px 0;
 }
+
+/* #9e5fab; */
 
 .decorative-element {
     position: absolute;

@@ -142,10 +142,10 @@ function insertSuggestion(textarea, suggestion) {
   const currentText = textarea.value;
   const cursorPos = textarea.selectionStart;
 
-  const prefix = currentText.substring(0, cursorPos);
+  //const prefix = currentText.substring(0, cursorPos);
   const suffix = currentText.substring(textarea.selectionEnd);
 
-  const newText = prefix + suggestion + suffix;
+  const newText = suggestion + suffix;
 
   textarea.value = newText;
   textarea.focus(); // Setting focus back to the textarea

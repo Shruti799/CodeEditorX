@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Login - CodeEditorX</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6SRE7KLYCX"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -13,28 +14,27 @@
         gtag('config', 'G-71NTGKLX8C');
     </script>
     <style>
+        /* CSS for the login page */
         body {
             font-family: Arial, sans-serif;
-            background-color: #8f8fcc;
+            background-image: url(nyt1.jpg);
             background-size: cover;
             text-align: center;
         }
 
-        /* rgb(166, 166, 239) */
-        .container {
-            max-width: 330px;
+        .login-container {
+            max-width: 331px;
             margin: 3% auto;
             padding: 18px;
             background-color: white;
-            border: 6px ;
-            margin-top: 7px;
+            border: 6px;
         }
 
         h1 {
             color: #1c8adb;
             font-size: 27px;
         }
-        
+
         form {
             text-align: left;
         }
@@ -42,39 +42,37 @@
         label {
             display: block;
             margin-top: 8px;
-            color: black;
+            background-color: rgb(126, 209, 220);
         }
 
-        input[type="text"],
-        input[type="password"],
-        input[type="email"] {
+        input {
             width: 93%;
             padding: 9px 9px;
             margin-top: 4px;
             margin-bottom: 5px;
             border: 1px solid #999;
-            outline: none;
             border-radius: 12px;
+            outline: none;
         }
-        
 
-        input[type="submit"] {
+        button {
             background-color: #007BFF;
-            margin-top: 10px;
-            margin-left: 96px;
-            color: white;
+            color: #fff;
             border: none;
             padding: 8px 50px;
             border-radius: 5px;
+            font-size: 15px;
+            margin-top: 20px;
             cursor: pointer;
+            margin-left: 96px;
         }
 
-        input[type="submit"]:hover {
-            background-color: #4c98e8;
+        button:hover {
+            background-color: #0c83c3;
         }
         .header {
             text-align: left;
-            color: whitesmoke;
+            color: white;
             padding: 10px;
             border-radius: 10px;
             margin: 0;
@@ -86,20 +84,13 @@
     <div class="header">
         <h2>&copy; CodeEditorX</h2>
     </div>
-    <div class="container">
+    <div class="login-container">
         <img src="icon1.png" style="width:70px; margin-top: -50px;">
-        <h1>Sign Up</h1>
-        <form action="signup.php" method="post">
-            <!--<label for="username">Username:</label>!-->
+        <h1>Login</h1>
+        <form action="login.php" method="post"> <!-- Update action to point to login.php -->
             <input type="text" id="username" name="username" placeholder="Username" required>
-
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
             <input type="password" id="password" name="password" placeholder="Password" required>
-            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
-            <p><span><input type="checkbox" name=""></span> I agree to the Terms and Conditions</p>
-
-
-            <input type="submit" value="Sign Up">
+            <button type="submit">Login</button>
         </form>
     </div>
 </body>
